@@ -1,4 +1,4 @@
-/* очистить все границы и отступы*/
+﻿/* очистить все границы и отступы*/
 *{
     padding: 0;
     margin: 0;
@@ -42,3 +42,5 @@ img{vertical-align: top;}
 
 /* обнуление заголовкков*/
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400; }
+
+*{font-family: 'Montserrat', sans-serif;}
