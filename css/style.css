@@ -43,4 +43,64 @@ img{vertical-align: top;}
 /* обнуление заголовкков*/
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400; }
 
-*{font-family: 'Montserrat', sans-serif;}
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+html{
+    margin: 0 auto;
+    color: #AE7C78;
+    position: relative;
+    background: #FFFFFF;
+}
+
+header{
+    margin: 25px 0 80px 0;
+    padding: 20px 0;
+    border-top: 1px solid #AE7C78;
+    border-bottom: 1px solid #AE7C78;
+}
+nav{
+    width: auto;
+    text-align: center;
+    position: initial;
+}
+
+header nav a{
+
+    color: #AE7C78;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+}
+div.preview__text{
+    width: 384px;
+}
+div.preview__text h1 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-size: 44px;
+    line-height: 59px;
+}
+div.preview__text p{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 64px;
+}
+.linkmain {
+    width: 285px;
+    height: 80px;
+    border: 0px solid #D89999;
+}
+.linkmain a{
+    font-size: 16px;
+    margin-top: 64px;
+    color: #FFFFFF;
+    padding: 30px 69px;
+    background: #D89999;
+    border-radius: 40px;
+}
+.preview__imgone{
+    display: inline;
+    
+}
