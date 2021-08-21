@@ -14,7 +14,7 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 /*делает теги блочными*/
-nav,footer,header,aside{display: block;}
+nav,footer,header,aside,main{display: block;}
 
 /*одинаковое поведение шрифтов для разных браузеров*/
 html,body{
@@ -29,7 +29,7 @@ html,body{
 }
 
 /*наследование семейство шрифта для "особенных" тегов*/
-input,button, textarea{font-family: inherit;}
+input,button,textarea{font-family: inherit;}
 
 /* убирают лишнее в отображении в разных браузерах*/
 input::-ms-clear{display: none;}
@@ -44,20 +44,19 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400; }
 
 * {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+
 }
 html{
-
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 24px;
     color: #AE7C78;
-    position: relative;
     background: #FFFFFF;
 }
 body{
-    margin: 0 auto;
+    width: 100%;
+    height: inherit;
 }
 main {
-    height: 608px;
     margin: 0 auto;
 }
 header{
@@ -67,90 +66,14 @@ header{
     border-bottom: 1px solid #AE7C78;
 }
 nav{
-    margin: auto;
     text-align: center;
+
     height: 64px;
+}
+a{
+    margin: 0 auto;
+   text-align: center;
+}
+ul{
     display: flex;
-    font-size: 16px;
-    flex-direction: row;
-}
-
-nav a{
-    align-self: center;
-     margin: auto;
-    flex: 1 1 auto;
-    color: #AE7C78;
-
-}
-header nav a:hover{
-    align-items: stretch;
-    flex: 1 1 auto;
-    color: #FFFFFF;
-    background-color: #D89999;
-}
-header nav a:active{
-    background-color: #AE7C78;
-}
-div.preview__text{
-    width: 384px;
-}
-div.preview__text h1 {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-size: 44px;
-    line-height: 59px;
-}
-div.preview__text p{
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 64px;
-}
-.linkmain {
-    width: 285px;
-    height: 80px;
-    border: 0px solid #D89999;
-}
-.linkmain a{
-    font-size: 16px;
-    margin-top: 64px;
-    color: #FFFFFF;
-    padding: 30px 69px;
-    background: #D89999;
-    border-radius: 40px;
-}
-.preview__imgone{
-    display: inline;
-
-}
-.main_row{
-    display: flex;
-    justify-content: center;
-
-}
-.main__element1{
-    width: 384px;
-}
-.main__element1 h1, em{
-    font-family: "Playfair Display", sans;
-    font-size: 44px;
-    line-height: 59px;
-    padding-bottom: 24px;
-}
-.main__element1 p{
-    font-family: Montserrat, sans-serif;
-    font-size: 24px;
-    line-height: 29px;
-    padding-bottom: 64px;
-}
-
-
-.main__link a{
-    display: block;
-    width: 285px;
-    height: 80px;
-    text-align: center;
-    vertical-align: auto;
-    color: #FFFFFF;
-    background-color: #D89999;
-    border-radius: 40px;
 }
