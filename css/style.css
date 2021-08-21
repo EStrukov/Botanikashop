@@ -48,30 +48,48 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400; }
     font-size: 24px;
 }
 html{
-    margin: 0 auto;
+
     color: #AE7C78;
     position: relative;
     background: #FFFFFF;
 }
-
+body{
+    margin: 0 auto;
+}
+main {
+    height: 608px;
+    margin: 0 auto;
+}
 header{
     margin: 25px 0 80px 0;
-    padding: 20px 0;
+
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
 }
 nav{
-    width: auto;
+    margin: auto;
     text-align: center;
-    position: initial;
+    height: 64px;
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
 }
 
-header nav a{
-
+nav a{
+    align-self: center;
+     margin: auto;
+    flex: 1 1 auto;
     color: #AE7C78;
-    font-size: 16px;
-    text-align: center;
-    padding: 10px 0;
+
+}
+header nav a:hover{
+    align-items: stretch;
+    flex: 1 1 auto;
+    color: #FFFFFF;
+    background-color: #D89999;
+}
+header nav a:active{
+    background-color: #AE7C78;
 }
 div.preview__text{
     width: 384px;
@@ -102,5 +120,37 @@ div.preview__text p{
 }
 .preview__imgone{
     display: inline;
-    
+
+}
+.main_row{
+    display: flex;
+    justify-content: center;
+
+}
+.main__element1{
+    width: 384px;
+}
+.main__element1 h1, em{
+    font-family: "Playfair Display", sans;
+    font-size: 44px;
+    line-height: 59px;
+    padding-bottom: 24px;
+}
+.main__element1 p{
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 64px;
+}
+
+
+.main__link a{
+    display: block;
+    width: 285px;
+    height: 80px;
+    text-align: center;
+    vertical-align: auto;
+    color: #FFFFFF;
+    background-color: #D89999;
+    border-radius: 40px;
 }
