@@ -43,9 +43,6 @@ img{vertical-align: top;}
 /* обнуление заголовкков*/
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400; }
 
-* {
-
-}
 html{
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 24px;
@@ -53,7 +50,7 @@ html{
     background: #FFFFFF;
 }
 body{
-    max-width: 3000px;
+    min-width: 800px;
     height: inherit;
 }
 main{
@@ -246,17 +243,57 @@ div.slider div{
 .button button {
 background-color: #FFFFFF;
 }
-.catalog{
-    display: flex;
+.catalog {
+display: flex;
 }
-.catalog div{
+
+.catalog div:first-of-type a:first-of-type{
+    background: rgba(174, 124, 120, 0.6) url("../img/wedding_bouquet.jpg") 50% no-repeat;
     width: 387px;
     height: 442px;
     text-align: center;
-    background-color: rgba(174, 124, 120, 0.6);
     border-radius: 10px;
-    margin: 0 10px 80px;
+    padding-top: 195px;
+    display: block;
+    z-index: 0;
 
+}
+.catalog div:nth-of-type(2) a:first-of-type{
+    background: rgba(174, 124, 120, 0.6) url("../img/bouquet_with_pion.jpg") 50% no-repeat;
+    display: block;
+    width: 387px;
+    height: 442px;
+    text-align: center;
+    padding-top: 195px;
+    border-radius: 10px;
+    z-index: 0;
+}
+.catalog div:nth-of-type(3) a:first-of-type{
+    background: rgba(174, 124, 120, 0.6) url("../img/other_bouquet.jpg") 50% no-repeat;
+    display: block;
+    width: 387px;
+    height: 442px;
+    text-align: center;
+    padding-top: 195px;
+    border-radius: 10px;
+    z-index: 0;
+}
+.catalog div {
+    margin: 0 10px 0;
+    position: relative;
+}
+.catalog div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 10px;
+    background: rgba(174, 124, 120, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none
 }
 .catalog div a h3 {
     font-family: "Playfair Display", serif;
@@ -265,6 +302,7 @@ background-color: #FFFFFF;
     font-size: 36px;
     line-height: 48px;
     color: #FFFFFF;
+    z-index: 2;
 }
 .catalog div a p{
     font-family: Montserrat, sans-serif;
@@ -273,7 +311,5 @@ background-color: #FFFFFF;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-}
-.catalog:first-child{
-    background: url("../img/wedding_bouquet.jpg") 0 0 no-repeat;
+    z-index: 3;
 }
