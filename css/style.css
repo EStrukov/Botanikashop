@@ -256,7 +256,6 @@ display: flex;
     padding-top: 195px;
     display: block;
     z-index: 0;
-
 }
 .catalog div:nth-of-type(2) a:first-of-type{
     background: rgba(174, 124, 120, 0.6) url("../img/bouquet_with_pion.jpg") 50% no-repeat;
@@ -296,6 +295,7 @@ display: flex;
     pointer-events: none
 }
 .catalog div a h3 {
+    position: relative;
     font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: bold;
@@ -305,6 +305,7 @@ display: flex;
     z-index: 2;
 }
 .catalog div a p{
+    position: relative;
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -312,4 +313,10 @@ display: flex;
     line-height: 20px;
     color: #FFFFFF;
     z-index: 3;
+}
+.catalog div:first-child{
+    margin-left: auto;
+}
+.catalog div:last-child{
+    margin-right: auto;
 }
