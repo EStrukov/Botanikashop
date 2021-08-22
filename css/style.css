@@ -57,6 +57,7 @@ main{
     margin: 0 auto;
 
 }
+/* блок навигации*/
 header{
     width: 100%;
     border-top: 1px solid #AE7C78;
@@ -97,8 +98,8 @@ ul.left{
 ul.right{
     order: 3;
 }
+/* блок основного контента */
 .main_row{
-
     min-width: 650px;
     display: flex;
     height: 544px;
@@ -144,6 +145,7 @@ ul.right{
 .main__element3{
     margin-right: auto;
 }
+/*Блок с информацией о доствке*/
 .rules h3 {
     font-weight: 600;
     font-size: 16px;
@@ -190,6 +192,7 @@ h2 {
     letter-spacing: 0.02em;
     text-align: center;
 }
+/*Блок со слайдером*/
 div.slider {
     display: flex;
     margin: 20px 0 36px 0;
@@ -243,10 +246,11 @@ div.slider div{
 .button button {
 background-color: #FFFFFF;
 }
+/* блок с разделами католога для быстрого перехода*/
 .catalog {
 display: flex;
+    margin-bottom: 80px;
 }
-
 .catalog div:first-of-type a:first-of-type{
     background: rgba(174, 124, 120, 0.6) url("../img/wedding_bouquet.jpg") 50% no-repeat;
     width: 387px;
@@ -319,4 +323,35 @@ display: flex;
 }
 .catalog div:last-child{
     margin-right: auto;
+}
+/* Блок реклама со скидкой*/
+.sales{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.sales div{
+    position: initial;
+    width: 590px;
+    background-color: #AE7C78;
+}
+.sales div h2, .sales div p{
+    color: #FFFFFF;
+}
+.sales div h2{
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    font-size: 44px;
+    line-height: 59px;
+    margin: 40px 100px 24px;
+}
+.sales div p{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0px 100px;
 }
