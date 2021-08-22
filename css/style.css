@@ -106,8 +106,8 @@ ul.right{
     align-items: center;
 }
 .main__element1 {
-width: 384px;
-margin-left: auto;
+    width: 384px;
+    margin-left: auto;
 }
 .main__element1 h1{
     font-family: "Playfair Display", serif;
@@ -137,4 +137,96 @@ margin-left: auto;
 }
 .main__element3{
     margin-right: auto;
+}
+.rules h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AE7C78;
+    margin: 0 0 8px 0;
+}
+.rules p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.rules {
+    display: flex;
+    margin-top: 42px;
+    margin-bottom: 80px;
+}
+.rules__row_car {
+    width: 384px;
+    height: max-content;
+    background: url("../img/car.svg") left top/82px 52px no-repeat;
+    padding-left: 100px;
+    margin-left: auto;
+}
+.rules__row_bouquet {
+    width: 386px;
+    height: max-content;
+    background: url("../img/bouquetsvg.svg") left top/52px 52px no-repeat;
+    padding-left: 70px;
+    margin: 0 10px;
+}
+.rules__row_camera {
+    width: 387px;
+    height: max-content;
+    background: url("../img/camera.svg") left top/59px 52px no-repeat;
+    padding-left: 80px;
+    margin-right: auto;
+}
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+div.slider {
+    display: flex;
+    margin: 20px 0 36px 0;
+}
+div.slider div{
+    width: 387px;
+}
+.slider_info h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+.slider_info p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+.value {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 64px;
+}
+.slider_info a{
+    display: block;
+    width: 285px;
+    padding: 30px 105px;
+    color: #FFFFFF;
+    background-color: #D89999;
+    border-radius: 40px;
+}
+.slider_info {
+    margin-left:auto;
+}
+.slider_img {
+    margin-right: auto;
+}
+.button {
+    text-align: center;
+
+}
+.button button {
+background-color: #FFFFFF;
 }
