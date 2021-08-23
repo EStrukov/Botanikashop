@@ -332,6 +332,7 @@ display: flex;
 }
 .sales div{
     position: initial;
+    min-width: 590px;
     width: 590px;
     height: 391px;
     background-color: #AE7C78;
