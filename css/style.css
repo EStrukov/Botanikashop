@@ -102,6 +102,7 @@ ul.right{
 .main_row{
     min-width: 650px;
     display: flex;
+    flex-wrap:nowrap;
     height: 544px;
     align-items: center;
 }
@@ -146,7 +147,7 @@ ul.right{
     margin-right: auto;
 }
 /*Блок с информацией о доствке*/
-.rules h3 {
+h3 {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -160,6 +161,7 @@ ul.right{
 }
 .rules {
     display: flex;
+    flex-wrap:wrap;
     margin-top: 42px;
     margin-bottom: 80px;
 }
@@ -195,6 +197,7 @@ h2 {
 /*Блок со слайдером*/
 div.slider {
     display: flex;
+    flex-wrap:nowrap;
     margin: 20px 0 36px 0;
 }
 div.slider div{
@@ -212,7 +215,7 @@ div.slider div{
     line-height: 20px;
     margin-bottom: 24px;
 }
-.value {
+p.value {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -248,7 +251,8 @@ background-color: #FFFFFF;
 }
 /* блок с разделами католога для быстрого перехода*/
 .catalog {
-display: flex;
+    display: flex;
+    flex-wrap:nowrap;
     margin-bottom: 80px;
 }
 .catalog div:first-of-type a:first-of-type{
@@ -327,6 +331,7 @@ display: flex;
 /* Блок реклама со скидкой*/
 .sales{
     display: flex;
+    flex-wrap:wrap;
     justify-content: center;
     margin-bottom: 80px;
 }
@@ -356,4 +361,20 @@ display: flex;
     font-size: 24px;
     line-height: 29px;
     margin: 0px 100px;
+}
+/* блок с шагами */
+
+div.steps {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align: center;
+    margin:36px 0 80px;
+}
+div.steps div {
+    width: 285px;
+    margin: 0 10px 0;
+}
+div.steps div img{
+    margin-bottom: 8px;
 }
