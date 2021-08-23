@@ -333,6 +333,7 @@ display: flex;
 .sales div{
     position: initial;
     width: 590px;
+    height: 391px;
     background-color: #AE7C78;
 }
 .sales div h2, .sales div p{
