@@ -59,7 +59,7 @@ main{
 }
 /* блок навигации*/
 header{
-    width: 100%;
+    width: auto;
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
     margin: 32px 0 0px 0;
@@ -80,8 +80,9 @@ nav ul{
     flex-grow:1;
 }
 nav a{
-    flex: 1 1 auto auto;
-    font-family: "Montserrat", sans-serif;
+    display: block;
+    padding: 22px;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -90,7 +91,7 @@ nav a{
     align-self: center;
 }
 nav a:hover{
-    text-decoration: underline;
+    background: rgba(174, 124, 120, 0.5);
 }
 ul.left{
     order: 1;
@@ -314,7 +315,7 @@ background-color: #FFFFFF;
 }
 .catalog div a p{
     position: relative;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -355,7 +356,7 @@ background-color: #FFFFFF;
     margin: 40px 100px 24px;
 }
 .sales div p{
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -393,7 +394,7 @@ div.steps div img{
     text-align: left;
 }
 .news div:first-child p{
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -433,16 +434,16 @@ div.steps div img{
 .feedback h2 {
     margin-bottom: 40px;
 }
-blockquote {
-    font-family: Montserrat, sans-serif;
+.feedback blockquote {
+    font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 16px;
 }
-cite {
-    font-family: Montserrat, sans-serif;
+.feedback cite {
+    font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -469,7 +470,7 @@ cite {
 }
 .contact div dt{
     padding: 0px 0 21px 35px;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -477,7 +478,7 @@ cite {
 }
 .contact div dd{
     padding: 0px 0 32px 35px;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -485,7 +486,7 @@ cite {
 }
 .contact div dd a{
     color: #AE7C78;
-    font-family: Montserrat,sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
