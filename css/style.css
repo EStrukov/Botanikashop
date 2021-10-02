@@ -1,23 +1,38 @@
 ﻿/* очистить все границы и отступы*/
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
 }
 /* изменение подсчета ширины блока для удобной верстки*/
-*,*:before,*:after{
+*,
+*:before,
+*:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 /* убрать линии обводки у некоторых браузеров*/
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
 /*делает теги блочными*/
-nav,footer,header,aside,main{display: block;}
+nav,
+footer,
+header,
+aside,
+main {
+    display: block;
+}
 
 /*одинаковое поведение шрифтов для разных браузеров*/
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
     font-size: 100%;
@@ -29,81 +44,102 @@ html,body{
 }
 
 /*наследование семейство шрифта для "особенных" тегов*/
-input,button,textarea{font-family: inherit;}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
 
 /* убирают лишнее в отображении в разных браузерах*/
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding: 0;border: 0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
 
 /* обнуление заголовкков*/
-h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
 
-html{
+html {
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 24px;
-    color: #AE7C78;
-    background: #FFFFFF;
+    color: #ae7c78;
+    background: #ffffff;
 }
-body{
-    min-width: 800px;
+body {
     height: inherit;
 }
-main{
+main {
     margin: 0 auto;
-
 }
 /* блок навигации*/
-header{
-    width: auto;
-    border-top: 1px solid #AE7C78;
-    border-bottom: 1px solid #AE7C78;
+header {
+    width: 100%;
+    border-top: 1px solid #ae7c78;
+    border-bottom: 1px solid #ae7c78;
     margin: 32px 0 0 0;
 }
-nav{
+nav {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-flow: nowrap row;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-grow:1;
     height: 64px;
 }
-nav ul{
+nav ul {
     display: flex;
     flex-flow: nowrap row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    flex-grow:1;
+    flex-grow: 1;
 }
-nav a{
+nav a {
     display: block;
-    padding: 22px;
+    padding: 15px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: #AE7C78;
-    order: 2;
+    color: #ae7c78;
     align-self: center;
 }
-nav a:hover{
+nav a:hover {
     background: rgba(174, 124, 120, 0.5);
 }
-ul.left{
-    order: 1;
-}
-ul.right{
-    order: 3;
-}
 /* блок основного контента */
-.main_row{
-    min-width: 650px;
+.main_row {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     height: 544px;
     align-items: center;
 }
@@ -111,13 +147,13 @@ ul.right{
     width: 384px;
     margin-left: auto;
 }
-.main__element1 h1{
+.main__element1 h1 {
     font-family: "Playfair Display", serif;
     font-size: 44px;
     line-height: 59px;
     margin-bottom: 24px;
 }
-.main__element1 h1 span{
+.main__element1 h1 span {
     font-style: italic;
 }
 .main__element1 p {
@@ -125,26 +161,26 @@ ul.right{
     line-height: 29px;
     margin-bottom: 64px;
 }
-.main__element1 a{
+.main__element1 a {
     display: block;
     width: 280px;
     padding: 30px 70px;
-    color: #FFFFFF;
-    background-color: #D89999;
+    color: #ffffff;
+    background-color: #d89999;
     border-radius: 40px;
 }
-.main__element1 a:hover{
+.main__element1 a:hover {
     text-decoration: underline;
 }
-.main__element1 a:active{
-    background-color: #AE7C78;
+.main__element1 a:active {
+    background-color: #ae7c78;
     text-decoration: underline;
 }
 .main__element2 {
     align-self: flex-end;
     margin: 0 20px;
 }
-.main__element3{
+.main__element3 {
     margin-right: auto;
 }
 /*Блок с информацией о доствке*/
@@ -152,7 +188,7 @@ h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #AE7C78;
+    color: #ae7c78;
     margin: 0 0 8px 0;
 }
 .rules p {
@@ -162,7 +198,7 @@ h3 {
 }
 .rules {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin-top: 42px;
     margin-bottom: 80px;
 }
@@ -198,19 +234,19 @@ h2 {
 /*Блок со слайдером*/
 div.slider {
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     margin: 20px 0 36px 0;
 }
-div.slider div{
+div.slider div {
     width: 387px;
 }
-.slider_info h3{
+.slider_info h3 {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 20px;
 }
-.slider_info p{
+.slider_info p {
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
@@ -222,23 +258,23 @@ p.value {
     line-height: 29px;
     margin-bottom: 64px;
 }
-.slider_info a{
+.slider_info a {
     display: block;
     width: 285px;
     padding: 30px 105px;
-    color: #FFFFFF;
-    background-color: #D89999;
+    color: #ffffff;
+    background-color: #d89999;
     border-radius: 40px;
 }
-.slider_info a:hover{
+.slider_info a:hover {
     text-decoration: underline;
 }
-.slider_info a:active{
-    background-color: #AE7C78;
+.slider_info a:active {
+    background-color: #ae7c78;
     text-decoration: underline;
 }
 .slider_info {
-    margin-left:auto;
+    margin-left: auto;
 }
 .slider_img {
     margin-right: auto;
@@ -248,15 +284,15 @@ p.value {
     margin-bottom: 80px;
 }
 .button button {
-background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 /* блок с разделами католога для быстрого перехода*/
 .catalog {
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     margin-bottom: 80px;
 }
-.catalog div:first-of-type a:first-of-type{
+.catalog div:first-of-type a:first-of-type {
     background: rgba(174, 124, 120, 0.6) url("../img/wedding_bouquet.jpg") 50% no-repeat;
     width: 387px;
     height: 442px;
@@ -266,7 +302,7 @@ background-color: #FFFFFF;
     display: block;
     z-index: 0;
 }
-.catalog div:nth-of-type(2) a:first-of-type{
+.catalog div:nth-of-type(2) a:first-of-type {
     background: rgba(174, 124, 120, 0.6) url("../img/bouquet_with_pion.jpg") 50% no-repeat;
     display: block;
     width: 387px;
@@ -276,7 +312,7 @@ background-color: #FFFFFF;
     border-radius: 10px;
     z-index: 0;
 }
-.catalog div:nth-of-type(3) a:first-of-type{
+.catalog div:nth-of-type(3) a:first-of-type {
     background: rgba(174, 124, 120, 0.6) url("../img/other_bouquet.jpg") 50% no-repeat;
     display: block;
     width: 387px;
@@ -291,7 +327,7 @@ background-color: #FFFFFF;
     position: relative;
 }
 .catalog div:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -301,7 +337,7 @@ background-color: #FFFFFF;
     width: 100%;
     height: 100%;
     z-index: 1;
-    pointer-events: none
+    pointer-events: none;
 }
 .catalog div a h3 {
     position: relative;
@@ -310,43 +346,44 @@ background-color: #FFFFFF;
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    color: #FFFFFF;
+    color: #ffffff;
     z-index: 2;
 }
-.catalog div a p{
+.catalog div a p {
     position: relative;
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
     z-index: 3;
 }
-.catalog div:first-child{
+.catalog div:first-child {
     margin-left: auto;
 }
-.catalog div:last-child{
+.catalog div:last-child {
     margin-right: auto;
 }
 /* Блок реклама со скидкой*/
-.sales{
+.sales {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 80px;
 }
-.sales div{
+.sales div {
     position: initial;
     min-width: 590px;
     width: 590px;
     height: 391px;
-    background-color: #AE7C78;
+    background-color: #ae7c78;
 }
-.sales div h2, .sales div p{
-    color: #FFFFFF;
+.sales div h2,
+.sales div p {
+    color: #ffffff;
 }
-.sales div h2{
+.sales div h2 {
     font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: normal;
@@ -355,7 +392,7 @@ background-color: #FFFFFF;
     line-height: 59px;
     margin: 40px 100px 24px;
 }
-.sales div p{
+.sales div p {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -367,16 +404,16 @@ background-color: #FFFFFF;
 
 div.steps {
     display: flex;
-    flex-wrap:wrap;
-    justify-content:center;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    margin:36px 0 80px;
+    margin: 36px 0 80px;
 }
 div.steps div {
     width: 285px;
     margin: 0 10px 0;
 }
-div.steps div img{
+div.steps div img {
     margin-bottom: 8px;
 }
 /*блок с соц сетями "news"*/
@@ -386,14 +423,14 @@ div.steps div img{
     justify-content: center;
     margin-bottom: 80px;
 }
-.news div:first-child{
+.news div:first-child {
     width: 387px;
     margin-right: 120px;
 }
-.news div:first-child h2{
+.news div:first-child h2 {
     text-align: left;
 }
-.news div:first-child p{
+.news div:first-child p {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -401,34 +438,34 @@ div.steps div img{
     line-height: 29px;
     margin: 40px 0;
 }
-.column{
+.column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 20px;
 }
-.column img:first-child{
+.column img:first-child {
     margin-bottom: 20px;
 }
-.news div ul{
+.news div ul {
     display: flex;
 }
-.news div ul li:nth-child(2){
+.news div ul li:nth-child(2) {
     margin: 0 20px;
 }
 /* ОТЗЫВЫ */
-.feedback{
+.feedback {
     margin: 0 auto;
-    border: 1px solid #AE7C78;
+    border: 1px solid #ae7c78;
     padding: 40px 44px 64px;
     text-align: center;
     width: max-content;
 }
-.feedback div{
+.feedback div {
     display: inline-block;
     text-align: center;
 }
-.feedback div div{
+.feedback div div {
     width: 300px;
 }
 .feedback h2 {
@@ -450,25 +487,25 @@ div.steps div img{
     line-height: 20px;
 }
 /*карта и контакты*/
-.contact{
+.contact {
     margin: 0 auto;
     width: 1436px;
     height: 645px;
     background: url("../img/map.jpg") 50% no-repeat;
 }
-.contact div{
+.contact div {
     margin: 50px 0 0 220px;
     width: 386px;
     height: 520px;
-    background: #F7FAFC;
+    background: #f7fafc;
     box-shadow: 0 4px 40px rgba(217, 217, 217, 0.3);
     border-radius: 12px;
 }
-.contact div h2{
+.contact div h2 {
     text-align: left;
     padding: 40px 0 40px 35px;
 }
-.contact div dt{
+.contact div dt {
     padding: 0 0 21px 35px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -476,7 +513,7 @@ div.steps div img{
     font-size: 16px;
     line-height: 20px;
 }
-.contact div dd{
+.contact div dd {
     padding: 0 0 32px 35px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -484,8 +521,8 @@ div.steps div img{
     font-size: 16px;
     line-height: 20px;
 }
-.contact div dd a{
-    color: #AE7C78;
+.contact div dd a {
+    color: #ae7c78;
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -496,11 +533,11 @@ div.steps div img{
 footer {
     display: flex;
     flex-flow: nowrap row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    flex-grow:1;
+    flex-grow: 1;
     height: 64px;
-    background-color: #AE7C78;
+    background-color: #ae7c78;
 }
 footer a {
     display: flex;
@@ -509,21 +546,21 @@ footer a {
     align-items: center;
     flex-grow: 1;
 }
-footer ul.menu-footer{
+footer ul.menu-footer {
     display: flex;
     flex-flow: nowrap row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    flex-grow:1;
+    flex-grow: 1;
 }
-footer ul.socials{
+footer ul.socials {
     display: flex;
     flex-flow: nowrap row;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
 }
-footer ul a{
-    margin: 0 10px ;
-    color: #FFFFFF;
+footer ul a {
+    margin: 0 10px;
+    color: #ffffff;
 }
