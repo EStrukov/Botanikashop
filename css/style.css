@@ -505,6 +505,7 @@ div.steps div img {
     height: 520px;
     background: #f7fafc;
     box-shadow: 0 4px 40px rgba(217, 217, 217, 0.3);
+    border: 1px solid #ae7c78;
     border-radius: 12px;
 }
 .contact div h2 {
