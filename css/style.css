@@ -139,7 +139,7 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 544px;
     align-items: center;
 }
@@ -162,7 +162,6 @@ nav a:hover {
     margin-bottom: 64px;
 }
 .main__element1 a {
-    display: block;
     width: 280px;
     padding: 30px 70px;
     color: #ffffff;
