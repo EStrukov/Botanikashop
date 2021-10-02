@@ -106,7 +106,7 @@ header {
     margin: 32px 0 0 0;
 }
 nav {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-flow: nowrap row;
@@ -144,7 +144,7 @@ nav a:hover {
     align-items: center;
 }
 .main__element1 {
-    width: 384px;
+    max-width: 384px;
     margin-left: auto;
 }
 .main__element1 h1 {
@@ -197,31 +197,33 @@ h3 {
     font-weight: 400;
 }
 .rules {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
     margin-top: 42px;
     margin-bottom: 80px;
 }
 .rules__row_car {
     width: 384px;
-    height: max-content;
     background: url("../img/car.svg") left top/82px 52px no-repeat;
     padding-left: 100px;
-    margin-left: auto;
+    text-align: left;
 }
 .rules__row_bouquet {
     width: 386px;
-    height: max-content;
     background: url("../img/bouquetsvg.svg") left top/52px 52px no-repeat;
     padding-left: 70px;
     margin: 0 10px;
+    text-align: left;
 }
 .rules__row_camera {
     width: 387px;
-    height: max-content;
     background: url("../img/camera.svg") left top/59px 52px no-repeat;
     padding-left: 80px;
-    margin-right: auto;
+    text-align: left;
 }
 h2 {
     font-family: "Playfair Display", serif;
@@ -288,13 +290,19 @@ p.value {
 }
 /* блок с разделами католога для быстрого перехода*/
 .catalog {
+    max-width: 1200px;
+    max-height: 445px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: 80px;
 }
+.catalog div {
+    width: 33.333%;
+}
 .catalog div:first-of-type a:first-of-type {
     background: rgba(174, 124, 120, 0.6) url("../img/wedding_bouquet.jpg") 50% no-repeat;
-    width: 387px;
+   
     height: 442px;
     text-align: center;
     border-radius: 10px;
@@ -305,7 +313,6 @@ p.value {
 .catalog div:nth-of-type(2) a:first-of-type {
     background: rgba(174, 124, 120, 0.6) url("../img/bouquet_with_pion.jpg") 50% no-repeat;
     display: block;
-    width: 387px;
     height: 442px;
     text-align: center;
     padding-top: 195px;
@@ -315,7 +322,6 @@ p.value {
 .catalog div:nth-of-type(3) a:first-of-type {
     background: rgba(174, 124, 120, 0.6) url("../img/other_bouquet.jpg") 50% no-repeat;
     display: block;
-    width: 387px;
     height: 442px;
     text-align: center;
     padding-top: 195px;
