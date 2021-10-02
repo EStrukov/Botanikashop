@@ -139,13 +139,13 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     height: 544px;
     align-items: center;
 }
 .main__element1 {
-    max-width: 384px;
-    margin-left: auto;
+    max-width: 33%;
+    flex-grow: 1;
 }
 .main__element1 h1 {
     font-family: "Playfair Display", serif;
@@ -179,9 +179,10 @@ nav a:hover {
 .main__element2 {
     align-self: flex-end;
     margin: 0 20px;
+    max-width: 31%;
 }
-.main__element3 {
-    margin-right: auto;
+.main__element2 {
+    max-width: 31%;
 }
 /*Блок с информацией о доствке*/
 h3 {
@@ -373,17 +374,20 @@ p.value {
 }
 /* Блок реклама со скидкой*/
 .sales {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 80px;
 }
 .sales div {
-    position: initial;
+    
     min-width: 590px;
     width: 590px;
     height: 391px;
     background-color: #ae7c78;
+
 }
 .sales div h2,
 .sales div p {
@@ -424,14 +428,17 @@ div.steps div img {
 }
 /*блок с соц сетями "news"*/
 .news {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
 }
 .news div:first-child {
     width: 387px;
-    margin-right: 120px;
+    margin-right: 100px;
 }
 .news div:first-child h2 {
     text-align: left;
@@ -461,11 +468,12 @@ div.steps div img {
 }
 /* ОТЗЫВЫ */
 .feedback {
+    max-width: 1200px;
     margin: 0 auto;
     border: 1px solid #ae7c78;
     padding: 40px 44px 64px;
     text-align: center;
-    width: max-content;
+    margin-bottom: 80px;
 }
 .feedback div {
     display: inline-block;
@@ -500,7 +508,7 @@ div.steps div img {
     background: url("../img/map.jpg") 50% no-repeat;
 }
 .contact div {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .contact div div {
@@ -545,7 +553,7 @@ footer {
     background-color: #ae7c78;
 }
 footer div {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-flow: nowrap row;
@@ -558,21 +566,18 @@ footer a {
     flex-flow: nowrap row;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
 }
 footer ul.menu-footer {
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-around;
     align-items: center;
-    flex-grow: 1;
 }
 footer ul.socials {
     display: flex;
     flex-flow: nowrap row;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
 }
 footer ul a {
     margin: 0 10px;
