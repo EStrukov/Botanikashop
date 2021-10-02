@@ -538,35 +538,10 @@ div.steps div img {
 }
 /*footer*/
 footer {
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
-    height: 64px;
+    margin: 0 auto;
     background-color: #ae7c78;
 }
-footer a {
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
-}
-footer ul.menu-footer {
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
-}
-footer ul.socials {
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
+
 footer ul a {
     margin: 0 10px;
     color: #ffffff;
